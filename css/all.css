@@ -87,16 +87,24 @@ body {
 
 .skills ul {
     margin: 0px auto;
-    width: 270px;
+    /* 
+可以在 ul 設定 display:inline-block; 
+讓他寬度為最長 li 的寬度，再利用 margin: 0 auto; 置中
+這樣可以不用寫死寬度~~
+    width: 270px; */
     border-left: 1px solid #fff;
     margin-top: 40px;
+    display:inline-block; 
 }
 
 .skills ul li {
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    margin-top:8px;
+    /* 
+技能區塊 li margin 設定下方就好了，
+上下都下的話兩個 li 間距會變 16px
+    margin-top:8px; */
     margin-bottom:8px;
     margin-left:23px;
 }
